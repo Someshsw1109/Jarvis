@@ -1,6 +1,7 @@
 import pyttsx3   
 import speech_recognition as sr
-
+#install command- pip install pyttsx3,
+#                 pip install speech_recognition
 
 
 
@@ -21,7 +22,7 @@ def takeCommand():
     with sr.Microphone() as source:
         print("Listening...")
         r.pause_threshold = 1
-        audio = r.listen(source,timeout=5,phrase_time_limit=5)
+        audio = r.listen(source,timeout=5,phrase_time_limit=5)#you can set timeout according to your working speed of laptop
 
     try:
         print("Recognizing...")
