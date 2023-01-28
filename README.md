@@ -1,8 +1,13 @@
 JARVIS (JUST A VERY INTELLIGENT SYSTEM IN THE FIELD OF AI)
+
 Hey guys this is somesh and this was my first attempt to make a personal voice assistant similar to JARVIS(As you already know that jarvis is a personal voice assistant of Tony starc(IRON MAN))
+
 Now talking honestly this is not so intelligent like as you'll see in the movie, but it can do a lot of cool things and automate your daily tasks you do on your personal computers/desktops/laptops
+
 FEATURES:
+
 It can do a lot of cool things, like as shown below you can see all of these:
+
 
 1.Greet user
 
