@@ -223,7 +223,7 @@ if __name__ == "__main__":
     while True:
         permission = takeCommand()
         if "good morning" in permission or "good afternoon" in permission or "good evening" in permission:
-            Taskexecuting()
+            executing()
         
         elif "goodbye" in permission or "good night" in permission:
             speak("thanks for using me have a good day sir")
