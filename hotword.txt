@@ -1,0 +1,2 @@
+#nothing here for hotword you just go to code branch of this repository
+# i suggest after seeing my code you make your own hotword
