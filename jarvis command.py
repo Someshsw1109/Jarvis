@@ -1,3 +1,7 @@
+from email import encoders, message
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 import pyttsx3
 import requests  #pip install requests
 import speech_recognition as sr
@@ -82,15 +86,17 @@ def news():
 
 
 
-if __name__=="__main__":
+def executing():
+#if __name__=="__main__":
     wishMe()
     while True:
+   # if 1:--- if you want that your jarvis will listen only one command then you can use if statement
 
         query = takeCommand()
 
         if "open notepad" in query:
             speak("ok sir please wait")
-            npath = "C:\\Windows\\notepad.exe"
+            npath = "PATH OF NOTEPAD"
             os.startfile(npath)
 
         elif "close notepad" in query or "close the notepad" in query:
@@ -99,7 +105,7 @@ if __name__=="__main__":
 
         elif "open adobe reader" in query:
             speak("ok sir please wait")
-            apath = "C:\\Users\\Public\\Desktop\\Adobe Acrobat.lnk"
+            apath = "PATH OF ADOBE READER"
             os.startfile(apath)
 
         elif "close adobe reader" in query or "close the adobe reader" in query:
@@ -132,7 +138,7 @@ if __name__=="__main__":
 
         elif "play music" in query:
             speak("ok sir please wait")
-            music_dir = "C:\Phone\Music"
+            music_dir = "PATH OF THAT FOLDER WHERE YOUR MUSIC FILES ARE STORED"
             songs = os.listdir(music_dir)
             for song in songs:
                 if song.endswith('.mp3'):
@@ -208,4 +214,17 @@ if __name__=="__main__":
         elif "sleep the system" in query:
             os.syetem("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
 
-        speak("sir do you have any other work")
+        #speak("sir do you have any other work")
+        
+
+        
+        
+if __name__ == "__main__":
+    while True:
+        permission = takeCommand()
+        if "good morning" in permission or "good afternoon" in permission or "good evening" in permission:
+            Taskexecuting()
+        
+        elif "goodbye" in permission or "good night" in permission:
+            speak("thanks for using me have a good day sir")
+            sys.exit()
