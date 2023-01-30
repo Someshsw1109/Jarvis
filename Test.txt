@@ -1,0 +1,2 @@
+#nothing here 
+#By running test.py in your ide and at the same moment you do right click on the search button of the you tube for 5-10 times continue without breaking it gives you the screen resoultion in the terms of (X=.., Y=..)
